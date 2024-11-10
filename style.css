@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.4%;
+  font-family: "IBM Plex Mono", monospace;
+  --main-color: #5300c8;
+  --form-color: #03318c;
+  --main-font-color: #ffffff;
+  --title-color-font: #000000;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  padding-block: 2rem;
+}
+
+header h1,
+header h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 67%;
+  color: var(--main-font-color);
+}
+
+section h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+section {
+  display: grid;
+  text-align: center;
+  padding: 4rem;
+}
+
+section.add-prod form {
+  display: grid;
+  gap: 4rem;
+  padding: 4rem;
+}
+
+form input {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 5.8rem;
+  color: var(--form-color);
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
+  border-radius: 3rem;
+  border: 3px solid var(--form-color);
+  background: #ffffff;
+}
+::placeholder {
+  color: var(--form-color);
+}
+
+section.add-pro form div.btns {
+  display: flex;
+  gap: 1.3rem;
+}
+
+div.btns button {
+  font-size: 2rem;
+  text-align: center;
+  padding-inline: clamp(0.6rem, -3.675rem + 13vw, 4.2rem);
+  padding-block: 2rem;
+  border-radius: 1.5rem;
+  color: var(--form-color);
+  background: transparent;
+  border: 3px solid var(--form-color);
+  cursor: pointer;
+}
+
+div.btns button:nth-child(1) {
+  background: var(--form-color);
+  color: var(--main-font-color);
+}
+
+section.my-prod {
+  padding-inline: 1.6rem;
+}
+
+section div.cards {
+  display: flex;
+  gap: 1rem;
+  padding-block: 4.4rem;
+  overflow-x: auto;
+}
+section.my-prod div.card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  width: 19.6rem;
+  height: auto;
+  background: var(--main-color);
+  border-radius: 1rem;
+  border: 3px solid #000000;
+  box-shadow: -5px 6px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+section div.card img {
+  border: 3px solid #000000;
+  border-radius: 5px;
+  width: 17.6rem;
+  height: 17.4rem;
+}
+
+section div.card p {
+  font-size: 1.6rem;
+  text-align: initial;
+  color: var(--main-font-color);
+}
+
+section div.card-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section div.card svg{
+  cursor: pointer;
+}
+
+footer {
+  padding-block: 3.2rem;
+  background-color: var(--main-color);
+  text-align: center;
+  box-shadow: 0 -10px 9px 0 rgba(0, 0, 0, 0.25);
+  background: #5300c8;
+}
+
+footer header {
+  padding: 0;
+}
+
+footer p {
+  color: var(--main-font-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-block: 1rem 1.3rem;
+  text-transform: uppercase;
+}
+footer p:nth-child(3) {
+  font-weight: 200;
+  padding: 0;
+}

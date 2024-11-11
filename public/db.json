@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "id": "555f",
+      "nome": "Sora",
+      "preco": 210,
+      "imagem": "https://i.pinimg.com/564x/c5/1d/b8/c51db8e78b6e209989780c2251ef689f.jpg"
+    },
+    {
+      "id": "2151",
+      "nome": "Ventus",
+      "preco": 110,
+      "imagem": "https://i.pinimg.com/564x/09/87/a4/0987a4eb5fe6d7088e1d25834e7c145e.jpg"
+    },
+    {
+      "id": "5082",
+      "nome": "Roxas",
+      "preco": 150,
+      "imagem": "https://i.pinimg.com/564x/06/e4/38/06e43887dfd49e691e67d941d3b36623.jpg"
+    },
+    {
+      "id": "1077",
+      "nome": "Cloud",
+      "preco": 120,
+      "imagem": "https://i.pinimg.com/564x/07/56/ff/0756ff803b818ee0afb0fa2d7efc2608.jpg"
+    },
+    {
+      "id": "96f3",
+      "nome": "Artorias",
+      "preco": 210,
+      "imagem": "https://i.pinimg.com/564x/85/0d/25/850d25b03ff1c5b460a4d36c17a726f3.jpg"
+    },
+    {
+      "id": "cefd",
+      "nome": "hunter",
+      "preco": 140,
+      "imagem": "https://i.pinimg.com/564x/a6/99/79/a699798c7cfff1ae9e9c167812c0de4d.jpg"
+    },
+    {
+      "id": "5793",
+      "nome": "Yhorm the Giant",
+      "preco": 200,
+      "imagem": "https://i.pinimg.com/564x/af/b9/af/afb9af77900d99793e62876644b4edf1.jpg"
+    },
+    {
+      "id": "4411",
+      "nome": "Lady Maria",
+      "preco": 120,
+      "imagem": "https://i.pinimg.com/564x/c0/b9/ea/c0b9eac4ed165da1032b3374d318e527.jpg"
+    }
+  ]
+}

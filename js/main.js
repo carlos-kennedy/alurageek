@@ -1,4 +1,3 @@
-// app.js
 import { createProduct, fetchProdutos, deleteProduct } from "./request";
 import "../style.css";
 
@@ -14,7 +13,6 @@ async function addProduct(e) {
     imagem,
   };
   if (!nome || isNaN(preco) || !imagem) {
-    alert("Preencha os campos para adicionar um produto.");
     return;
   }
 
@@ -28,13 +26,31 @@ async function addProduct(e) {
   }
   document.querySelector("form").reset();
 }
-const form = document.querySelector("form");
-form.addEventListener("submit", addProduct);
+const btnClean = document
+  .querySelector("div.btns button:nth-child(2)")
+  .addEventListener("click", () => {
+    const form = document.querySelector("form");
+    form.reset();
+  });
+const btnSubmit = document
+  .querySelector("div.btns button:nth-child(1)")
+  .addEventListener("click", () => {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", addProduct);
+  });
 
 async function listProducts() {
   const products = await fetchProdutos();
   const productList = document.querySelector("section.my-prod div.cards");
-  productList.innerHTML = "";
+  const noProducts = document.querySelector("div.no-products");
+
+  if (!products || products.length === 0) {
+    noProducts.style.display = "block";
+    productList.innerHTML = "";
+  } else {
+    noProducts.style.display = "none";
+    productList.innerHTML = "";
+  }
 
   if (products) {
     products.forEach((product) => {

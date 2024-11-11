@@ -2,7 +2,7 @@
 export async function fetchProdutos() {
   try {
     const response = await fetch(
-      "https://alurageek-zeta-one.vercel.app/db.json"
+      "https://alurageek-zeta-one.vercel.app/produtos"
     );
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
@@ -18,7 +18,7 @@ export async function fetchProdutos() {
 export async function createProduct(product) {
   try {
     const response = await fetch(
-      "https://alurageek-zeta-one.vercel.app/db.json",
+      "https://alurageek-zeta-one.vercel.app/produtos",
       {
         method: "POST",
         headers: {

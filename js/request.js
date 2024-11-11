@@ -1,9 +1,7 @@
 // requests.js
 export async function fetchProdutos() {
   try {
-    const response = await fetch(
-      "https://alurageek-zeta-one.vercel.app/produtos"
-    );
+    const response = await fetch("http://localhost:3000/produtos");
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
     }
@@ -17,16 +15,13 @@ export async function fetchProdutos() {
 
 export async function createProduct(product) {
   try {
-    const response = await fetch(
-      "https://alurageek-zeta-one.vercel.app/produtos",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(product),
-      }
-    );
+    const response = await fetch("http://localhost:3000/produtos", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(product),
+    });
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
     }
@@ -40,12 +35,9 @@ export async function createProduct(product) {
 
 export async function deleteProduct(id) {
   try {
-    const response = await fetch(
-      `https://alurageek-zeta-one.vercel.app/produtos/${id}`,
-      {
-        method: "DELETE",
-      }
-    );
+    const response = await fetch(`http://localhost:3000/produtos/${id}`, {
+      method: "DELETE",
+    });
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
     }

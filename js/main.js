@@ -83,8 +83,6 @@ async function listProducts() {
 
       productList.appendChild(card);
     });
-  } else {
-    productList.innerHTML = "<p>Não foi possível carregar os produtos.</p>";
   }
 }
 

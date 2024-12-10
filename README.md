@@ -34,9 +34,9 @@
    ```
 
 4. Rode o projeto:
-  ```bash
+   ```bash
    pnpm run dev
-  ```
+   ```
 
 5. Instale o json-server globalmente (caso ainda não tenha):
    ```bash

@@ -47,7 +47,7 @@ ou
    npm install -g json-server
    ```
 
-4. Inicie o json-server:
+6. Inicie o json-server:
    ```bash
    json-server --watch db.json
    ```

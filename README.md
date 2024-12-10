@@ -37,6 +37,10 @@
    ```bash
    pnpm run dev
    ```
+ou
+   ```bash
+   npm run dev
+   ```
 
 5. Instale o json-server globalmente (caso ainda não tenha):
    ```bash

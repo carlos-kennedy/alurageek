@@ -20,7 +20,7 @@
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/alurageek.git
+   git clone https://github.com/carlos-kennedy/alurageek.git
    ```
 
 2. Navegue até o diretório do projeto:
@@ -28,7 +28,17 @@
    cd alurageek
    ```
 
-3. Instale o json-server globalmente (caso ainda não tenha):
+3. Instale as depedências:
+   ```bash
+   npm i
+   ```
+
+4. Rode o projeto:
+  ```bash
+   pnpm run dev
+  ```
+
+5. Instale o json-server globalmente (caso ainda não tenha):
    ```bash
    npm install -g json-server
    ```
@@ -37,8 +47,6 @@
    ```bash
    json-server --watch db.json
    ```
-
-5. Abra o arquivo `index.html` em seu navegador.
 
 ## Estrutura do Projeto
 
